@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "archivedme",
+  "version": "0.0.0",
+  "description": "archivedme",
+  "author": "Bastean <bastean@pm.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/bastean/archivedme#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastean/archivedme.git"
+  },
+  "devDependencies": {
+    "git-commit-msg-linter": "5.0.4"
+  }
+}
