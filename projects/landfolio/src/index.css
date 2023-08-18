@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/** Styles **/
+
+	/* Scrollbar style*/
+	* {
+		scroll-behavior: smooth;
+	}
+
+	*::-webkit-scrollbar {
+		width: 8px;
+		background-color: #6f6f6f;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: #97989a;
+		border-radius: 50px;
+	}
+
+	/** Media Queries **/
+
+	/* Scrollbar */
+	@media (max-width: 1024px) {
+		*::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	/* ! |> DEV <|
+        * {
+            border: 1px solid red;
+        }
+    */
+}
+
+@layer components {
+	/** Fonts **/
+
+	#endft {
+		font-family: 'Clash Display', sans-serif;
+	}
+
+	#bctech {
+		font-family: 'Gilroy Bold', sans-serif;
+	}
+
+	/** Styles **/
+
+	.glassEffect {
+		@apply border-[1px] border-white/20 bg-white/10 backdrop-blur-md !transition-all !duration-300 ease-out hover:shadow-md hover:shadow-slate-50/25;
+	}
+
+	/** Animations **/
+
+	/* GitHub Icon */
+	.entryAnimation {
+		animation: onShowHome 3s 2.5s ease-out running forwards;
+	}
+
+	@keyframes onShowHome {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	/* Landfolio Logo */
+	.logoAnimation {
+		animation: onShowLogo 3s ease-out running forwards;
+	}
+
+	@keyframes onShowLogo {
+		0% {
+			opacity: 1;
+			transform: scale(100%) translateZ(0px);
+		}
+
+		100% {
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(150%) translateZ(100px);
+		}
+	}
+
+	/* Home Background */
+	.bgAnimation {
+		animation: onShowHomeBg 3s ease-in infinite alternate;
+	}
+
+	@keyframes onShowHomeBg {
+		0% {
+			opacity: 0.9;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+}
+
+@layer utilities {
+	/** Buttons **/
+
+	/* Paths */
+	.arrowPath {
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	}
+
+	/** Positions **/
+
+	/* Center */
+	.center {
+		@apply flex items-center justify-center;
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Landfolio",
+	"short_name": "Landfolio",
+	"version": "1.2.0",
+	"description": "Beautifully portfolio of landing page collections.",
+	"author": "Bastean",
+	"homepage_url": "https://github.com/bastean/landfolio#readme",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"background_color": "#12181F",
+	"theme_color": "#111111",
+	"icons": [
+		{
+			"src": "./images/icons/pwa-any.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "./images/icons/pwa-maskable.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	]
+}

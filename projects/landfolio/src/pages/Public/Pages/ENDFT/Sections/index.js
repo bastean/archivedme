@@ -1,0 +1,9 @@
+export { Articles } from './Articles';
+export { CreateAndSell } from './CreateAndSell';
+export { Footer } from './Footer';
+export { Header } from './Header';
+export { Main } from './Main';
+export { TopCategories } from './TopCategories';
+export { TopCollections } from './TopCollections';
+export { TrendingNFTs } from './TrendingNFTs';
+export { Wallets } from './Wallets';
