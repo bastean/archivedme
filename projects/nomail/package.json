@@ -1,0 +1,56 @@
+{
+	"private": true,
+	"name": "nomail",
+	"version": "1.0.0",
+	"description": "No Mail? No Problem. Generate random addresses for email confirmations and detect verification codes automatically from the command-line.",
+	"author": "Bastean",
+	"license": "MIT",
+	"keywords": [
+		"nomail",
+		"cli",
+		"mail",
+		"address",
+		"temporary",
+		"disposable"
+	],
+	"homepage": "https://github.com/bastean/nomail#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/nomail.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bastean/nomail/issues"
+	},
+	"files": [
+		"src/*"
+	],
+	"type": "module",
+	"main": "index.js",
+	"bin": "index.js",
+	"scripts": {
+		"start": "node --experimental-specifier-resolution=node --no-warnings index.js",
+		"dev": "nodemon --no-stdin --experimental-specifier-resolution=node --no-warnings index.js"
+	},
+	"dependencies": {
+		"@cemalgnlts/mailjs": "2.0.2",
+		"clipboardy": "3.0.0",
+		"colors": "1.4.0",
+		"commander": "9.4.1",
+		"figlet": "1.5.2",
+		"ora": "6.1.2",
+		"table": "6.8.1"
+	},
+	"devDependencies": {
+		"nodemon": "2.0.20"
+	},
+	"imports": {
+		"#src/*": "./src/*",
+		"#cli": "./src/cli",
+		"#cli/*": "./src/cli/*",
+		"#services": "./src/services",
+		"#services/*": "./src/services/*",
+		"#utils": "./src/utils",
+		"#utils/*": "./src/utils/*",
+		"#main": "./src/main"
+	}
+}
