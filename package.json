@@ -1,16 +1,21 @@
 {
-  "private": true,
-  "name": "archivedme",
-  "version": "0.0.0",
-  "description": "archivedme",
-  "author": "Bastean <bastean@pm.me>",
-  "license": "MIT",
-  "homepage": "https://github.com/bastean/archivedme#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bastean/archivedme.git"
-  },
-  "devDependencies": {
-    "git-commit-msg-linter": "5.0.4"
-  }
+	"private": true,
+	"name": "archivedme",
+	"version": "0.0.0",
+	"description": "archivedme",
+	"author": "Bastean <bastean@pm.me>",
+	"license": "MIT",
+	"homepage": "https://github.com/bastean/archivedme#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/archivedme.git"
+	},
+	"scripts": {
+		"lint": "prettier --ignore-unknown --write .",
+		"lint:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"git-commit-msg-linter": "5.0.4",
+		"prettier": "3.0.2"
+	}
 }
