@@ -1,0 +1,45 @@
+{
+	"private": true,
+	"name": "npmame",
+	"version": "0.0.0",
+	"description": "NPMame directly from the command-line.",
+	"author": "Bastean",
+	"license": "MIT",
+	"keywords": [
+		"npmame",
+		"command",
+		"cli"
+	],
+	"homepage": "https://github.com/bastean/npmame#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/npmame.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bastean/npmame/issues"
+	},
+	"files": [
+		"src/*"
+	],
+	"type": "module",
+	"main": "index.js",
+	"bin": "index.js",
+	"scripts": {
+		"start": "node --experimental-specifier-resolution=node --no-warnings index.js",
+		"dev": "nodemon --no-stdin --experimental-specifier-resolution=node --no-warnings index.js"
+	},
+	"dependencies": {
+		"commander": "9.4.1"
+	},
+	"devDependencies": {
+		"nodemon": "2.0.20"
+	},
+	"imports": {
+		"#src/*": "./src/*",
+		"#cli": "./src/cli",
+		"#cli/*": "./src/cli/*",
+		"#utils": "./src/utils",
+		"#utils/*": "./src/utils/*",
+		"#main": "./src/main"
+	}
+}
