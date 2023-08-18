@@ -1,0 +1,27 @@
+{
+	"name": "MERN",
+	"short_name": "MERN",
+	"version": "1.5.2",
+	"description": "Basis Client for a quick start in development with React, Vite, Zustand, Tailwind CSS, Axios, and Much more.",
+	"author": "Bastean",
+	"homepage_url": "https://github.com/bastean/mern-client#readme",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"background_color": "#000000",
+	"theme_color": "#111111",
+	"icons": [
+		{
+			"src": "./images/icons/pwa-any.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "./images/icons/pwa-maskable.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	]
+}
