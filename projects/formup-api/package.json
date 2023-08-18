@@ -1,0 +1,64 @@
+{
+	"private": true,
+	"name": "formup-api",
+	"version": "1.3.1",
+	"description": "API to validate contact form entries and reCAPTCHA response, all contact information received and verified will be sent via email.",
+	"author": "Bastean",
+	"license": "MIT",
+	"homepage": "https://github.com/bastean/formup-api#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/formup-api.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bastean/formup-api/issues"
+	},
+	"engines": {
+		"node": ">=18",
+		"npm": ">=8"
+	},
+	"type": "module",
+	"scripts": {
+		"start": "node --experimental-specifier-resolution=node --no-warnings index.js",
+		"dev": "nodemon --experimental-specifier-resolution=node --no-warnings index.js"
+	},
+	"dependencies": {
+		"axios": "1.1.3",
+		"colors": "1.4.0",
+		"compression": "1.7.4",
+		"cors": "2.8.5",
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"express-rate-limit": "6.6.0",
+		"express-slow-down": "1.5.0",
+		"figlet": "1.5.2",
+		"helmet": "6.0.0",
+		"nodemailer": "6.8.0"
+	},
+	"devDependencies": {
+		"nodemon": "2.0.20"
+	},
+	"imports": {
+		"#src/*": "./src/*",
+		"#helpers": "./src/helpers",
+		"#helpers/*": "./src/helpers/*",
+		"#server": "./src/server",
+		"#server/*": "./src/server/*",
+		"#main": "./src/main",
+		"#api/*": "./src/api/v1/*",
+		"#assets": "./src/api/v1/assets",
+		"#assets/*": "./src/api/v1/assets/*",
+		"#controllers": "./src/api/v1/controllers",
+		"#controllers/*": "./src/api/v1/controllers/*",
+		"#libs": "./src/api/v1/libs",
+		"#libs/*": "./src/api/v1/libs/*",
+		"#middlewares": "./src/api/v1/middlewares",
+		"#middlewares/*": "./src/api/v1/middlewares/*",
+		"#routes": "./src/api/v1/routes",
+		"#routes/*": "./src/api/v1/routes/*",
+		"#utils": "./src/api/v1/utils",
+		"#utils/*": "./src/api/v1/utils/*",
+		"#validations": "./src/api/v1/validations",
+		"#validations/*": "./src/api/v1/validations/*"
+	}
+}
