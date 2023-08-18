@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/** Styles */
+
+	/* Scrollbar */
+	* {
+		scroll-behavior: smooth;
+	}
+
+	*::-webkit-scrollbar {
+		width: 8px;
+		background-color: #6f6f6f;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: #545454;
+		border-radius: 50px;
+	}
+
+	#bookingTable::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Text */
+	.textShadow {
+		text-shadow: black 0px 4px 20px;
+	}
+
+	/* Spacing */
+	.profileSpacing {
+		height: calc(100vh - 8rem);
+	}
+
+	/** Animations */
+
+	/* GitHub */
+	.gitHubAnimation {
+		animation: onShowGitHub 2s ease-out running;
+	}
+
+	.gitHubAnimation #gitHubIcon {
+		animation: onShowGitHub 3s ease-out running;
+	}
+
+	@keyframes onShowGitHub {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+	/* About */
+	.aboutAnimation a {
+		animation: onShowLogo 2s ease-in-out running;
+	}
+
+	@keyframes onShowLogo {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.aboutAnimation h2 {
+		animation: onShowDescription 3s ease-in-out running;
+	}
+
+	@keyframes onShowDescription {
+		0% {
+			opacity: 0;
+			transform: scale(0.95);
+		}
+
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	.formAnimation {
+		animation: onShowForm 3s ease-in-out running;
+	}
+
+	@keyframes onShowForm {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	/* Terms */
+	.termsAnimation {
+		animation: onShowTerms 1s ease-in-out running;
+	}
+
+	@keyframes onShowTerms {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	/* Alert */
+	.alertAnimation {
+		animation: onShowAlert 3s ease-in-out running;
+	}
+
+	@keyframes onShowAlert {
+		0% {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+
+		25% {
+			transform: translateX(0%);
+		}
+
+		50% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+
+		75% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+
+		95% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateX(110%);
+		}
+	}
+
+	/* Mobile Menu */
+	.mobileMenuAnimation {
+		animation: onShowMobileMenu 1s ease-in-out running;
+	}
+
+	@keyframes onShowMobileMenu {
+		0% {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+
+	.mobileMenuAnimationClose {
+		animation: onCloseMobileMenu 1s ease-in-out running;
+	}
+
+	@keyframes onCloseMobileMenu {
+		0% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+	}
+
+	/* Booking Form */
+	.bookingFormAnimation {
+		animation: onShowBookingForm 1s ease-in-out running;
+	}
+
+	@keyframes onShowBookingForm {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+	.bookingFormAnimationClose {
+		animation: onCloseBookingForm 1s ease-in-out running;
+	}
+
+	@keyframes onCloseBookingForm {
+		0% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+	}
+
+	/* Booking Table */
+	.bookingTable {
+		animation: onShowBooking 2s ease-in-out running;
+	}
+
+	.bookingTable #registerBtn {
+		animation: onShowBooking 3s ease-in-out running;
+	}
+
+	@keyframes onShowBooking {
+		0% {
+			opacity: 0;
+			transform: translateY(50%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+	/* EmptyBox */
+	.emptyBoxAnimation #emptyText {
+		animation: onShowEmptyBox 4s ease-in-out running;
+	}
+
+	.emptyBoxAnimation #emptyBox {
+		animation: onShowEmptyBox 3s ease-in-out running;
+	}
+
+	@keyframes onShowEmptyBox {
+		0% {
+			opacity: 0;
+		}
+
+		75% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	/* Profile */
+	.profileAnimation {
+		animation: onShowProfile 2s ease-in-out running;
+	}
+
+	.profileAnimation #profileOptions {
+		animation: onShowProfile 3s ease-in-out running;
+	}
+
+	@keyframes onShowProfile {
+		0% {
+			opacity: 0;
+			transform: translateY(50%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+	/* Form Span down/up Effect */
+	.downUpEffect input:not(:placeholder-shown) ~ span,
+	.downUpEffect textarea:not(:placeholder-shown) ~ span,
+	.downUpEffect input:focus ~ span,
+	.downUpEffect textarea:focus ~ span {
+		transform: translateY(-20px);
+		font-size: 14px;
+		color: #f6f6f6;
+	}
+
+	/** Media Queries */
+
+	/* Scrollbar */
+	@media (max-width: 1024px) {
+		*::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
