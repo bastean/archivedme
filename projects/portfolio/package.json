@@ -1,0 +1,28 @@
+{
+	"private": true,
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Redirection Portfolio...",
+	"author": "Bastean",
+	"license": "MIT",
+	"homepage": "https://github.com/bastean/portfolio#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/portfolio.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bastean/portfolio/issues"
+	},
+	"engines": {
+		"node": ">=16",
+		"npm": ">=8"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "3.2.1"
+	}
+}
