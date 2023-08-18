@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/** Styles **/
+
+	/* Scrollbar style */
+	* {
+		scroll-behavior: smooth;
+	}
+
+	*::-webkit-scrollbar {
+		width: 8px;
+		background-color: #6f6f6f;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: #97989a;
+		border-radius: 50px;
+	}
+
+	/** Media Queries **/
+
+	/* Scrollbar */
+	@media (max-width: 1024px) {
+		*::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+@layer components {
+	/** Animations **/
+
+	/* GitHub */
+	.gitHubAnimation {
+		animation: onShowGitHub 3s ease-out running;
+	}
+
+	@keyframes onShowGitHub {
+		0% {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+
+	/* hr */
+	.hrAnimation {
+		animation: onShowHr 3s ease-in-out running;
+	}
+
+	@keyframes onShowHr {
+		0% {
+			opacity: 0;
+			width: 0%;
+		}
+
+		100% {
+			opacity: 1;
+			width: 100%;
+		}
+	}
+
+	/* Alert */
+	.alertAnimation {
+		animation: onShowAlert 3s ease-in-out running;
+	}
+
+	@keyframes onShowAlert {
+		0% {
+			opacity: 0;
+			transform: translateY(-50%);
+		}
+
+		50% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+
+		75% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@layer utilities {
+	/** Transitions **/
+
+	/* Hover */
+	.softHover {
+		@apply transition-all duration-300 ease-out;
+	}
+
+	/* Opacity */
+	.opacityAnimation a {
+		animation: onShowComponent 4s ease-in-out running;
+	}
+
+	@keyframes onShowComponent {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+}

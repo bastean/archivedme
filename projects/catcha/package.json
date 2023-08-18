@@ -1,0 +1,41 @@
+{
+	"private": true,
+	"name": "catcha",
+	"version": "1.0.0",
+	"description": "Simple Client-side integration of reCAPTCHA v2 to obtain response tokens for testing purposes.",
+	"author": "Bastean",
+	"license": "MIT",
+	"homepage": "https://github.com/bastean/catcha#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastean/catcha.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bastean/catcha/issues"
+	},
+	"engines": {
+		"node": ">=18",
+		"npm": ">=8"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-google-recaptcha": "2.1.0",
+		"react-router-dom": "6.4.2"
+	},
+	"devDependencies": {
+		"@types/react": "18.0.24",
+		"@types/react-dom": "18.0.8",
+		"@vitejs/plugin-react": "2.2.0",
+		"autoprefixer": "10.4.13",
+		"postcss": "8.4.18",
+		"prettier-plugin-tailwindcss": "0.1.13",
+		"tailwindcss": "3.2.1",
+		"vite": "3.2.2"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Catcha",
+	"short_name": "Catcha",
+	"version": "1.0.0",
+	"description": "Simple Client-side integration of reCAPTCHA v2 to obtain response tokens for testing purposes.",
+	"author": "Bastean",
+	"homepage_url": "https://github.com/bastean/catcha#readme",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"background_color": "#00071B",
+	"theme_color": "#111111",
+	"icons": [
+		{
+			"src": "./images/icons/pwa-any.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "./images/icons/pwa-maskable.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	]
+}
