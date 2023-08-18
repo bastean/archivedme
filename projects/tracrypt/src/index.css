@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		scroll-behavior: smooth;
+	}
+
+	*::-webkit-scrollbar {
+		width: 8px;
+		background-color: #33384c;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: #191b25;
+		border-radius: 50px;
+	}
+
+	#coinTable::-webkit-scrollbar {
+		display: none;
+	}
+
+	@media (max-width: 1024px) {
+		*::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}

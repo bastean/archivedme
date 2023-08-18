@@ -1,0 +1,44 @@
+{
+	"name": "Tracrypt",
+	"short_name": "Tracrypt",
+	"description": "Tracrypt is a web-based tool where you can track and filter market data from the top 250 cryptocurrencies, all data is obtained via the Coingecko API.",
+	"version": "1.0.0",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"background_color": "#1F222E",
+	"theme_color": "#191B25",
+	"icons": [
+		{
+			"src": "./images/icons/icon48.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "./images/icons/icon72.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "./images/icons/icon96.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "./images/icons/icon144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "./images/icons/icon192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "./images/icons/icon512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}
